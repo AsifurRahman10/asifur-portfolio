@@ -13,8 +13,6 @@ export const MainLayout = () => {
         {/* footer */}
         <Footer />
       </main>
-      {/* </div>
-    </div> */}
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoIosMenu } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
@@ -6,9 +6,29 @@ import { Link, NavLink } from "react-router-dom";
 
 export const Navbar = () => {
   const [openSidebar, setOpenSidebar] = useState(false);
+  const sidebarRef = useRef();
   const handleMenuChange = () => {
     setOpenSidebar(!openSidebar);
   };
+
+  const closeSidebar = () => {
+    setOpenSidebar(false);
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+        closeSidebar();
+      }
+    };
+    if (openSidebar) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [openSidebar]);
 
   const navList = (
     <>
@@ -58,7 +78,7 @@ export const Navbar = () => {
           {navList}
         </ul>
 
-        <ul className="text-white text-xl hidden md:flex justify-center items-center gap-4 ">
+        <ul className="text-white text-2xl hidden md:flex justify-center items-center gap-4 ">
           {socialIcons}
         </ul>
         {openSidebar ? (
@@ -73,6 +93,7 @@ export const Navbar = () => {
           />
         )}
         <div
+          ref={sidebarRef}
           className={`fixed top-0 right-0 h-screen w-[200px] bg-black/90 transition-transform duration-300 ${
             openSidebar ? "translate-x-0" : "translate-x-full"
           }`}
