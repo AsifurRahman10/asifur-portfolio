@@ -53,7 +53,7 @@ export default function Projects() {
     <div className="w-full min-h-screen">
       <h2 className="text-white text-center text-4xl lg:text-6xl">Projects</h2>
 
-      <div className="space-y-6 mt-10 mx-auto w-5/6 lg:w-2/3">
+      <div className="space-y-14 mt-10 mx-auto w-5/6 lg:w-2/3">
         {projectsData.map((project, idx) => (
           <ProjectCard key={idx} project={project} />
         ))}

@@ -12,7 +12,7 @@ export const Technology = () => {
     visible: { opacity: 1, y: 0 },
   };
   return (
-    <div className="text-whit flex w-full flex-col items-center justify-center mb-20">
+    <div className="text-whit flex w-full flex-col items-center justify-center pb-20 min-h-[60vh]">
       <motion.h1
         variants={animation}
         initial="hidden"
@@ -23,7 +23,7 @@ export const Technology = () => {
         Technology
       </motion.h1>
 
-      <div className="mt-6 md:mt-10 mt flex justify-center items-center flex-wrap gap-10 px-4">
+      <div className="mt-6 md:mt-20 mt flex justify-center items-center flex-wrap gap-10 px-4">
         {/* fontend */}
         <motion.div
           variants={animation}

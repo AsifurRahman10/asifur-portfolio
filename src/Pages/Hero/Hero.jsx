@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 
 export const Hero = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center">
+    <div className="min-h-screen flex flex-col justify-center items-center pt-28 mb-20 md:mb-0 md:py-0 w-5/6 md:w-full">
       <motion.div
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 100 }}
@@ -17,7 +17,7 @@ export const Hero = () => {
         />
       </motion.div>
       <div className="mt-14 text-center ">
-        <h1 className="bg-gradient-to-r from-blue-500 to-red-500 bg-clip-text text-transparent opacity-60 text-5xl lg:text-6xl">
+        <h1 className="bg-gradient-to-r from-blue-500 to-red-500 bg-clip-text text-transparent opacity-60 text-4xl lg:text-6xl">
           <Typewriter
             words={["Asifur Rahman"]}
             typeSpeed={60}
@@ -32,7 +32,7 @@ export const Hero = () => {
           animate={{ y: 0, opacity: 100 }}
           transition={{ duration: 0.9, delay: 0.2 }}
         >
-          <h3 className="bg-gradient-to-r from-red-400 to-blue-400 bg-clip-text text-transparent opacity-60 font-bold text-6xl lg:text-7xl mt-4">
+          <h3 className="bg-gradient-to-r from-red-400 to-blue-400 bg-clip-text text-transparent opacity-60 font-bold text-4xl lg:text-7xl mt-4">
             Web Developer
           </h3>
           <p className="mt-4 lg:mt-6 text-gray-400 lg:w-1/2 mx-auto">
@@ -42,7 +42,7 @@ export const Hero = () => {
             experiences. Let’s build something extraordinary together!
           </p>
           <a href="/public/CV of Asifur Rahman.pdf">
-            <button className="bg-[#A892FF] px-8 py-3 mt-4 rounded-3xl hover:bg-[#BBA0FF]">
+            <button className="bg-[#A892FF] px-8 py-3 mt-8 rounded-3xl hover:bg-[#BBA0FF]">
               Download Resume
             </button>
           </a>

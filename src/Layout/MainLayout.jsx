@@ -22,9 +22,6 @@ export const MainLayout = () => {
 
         {/* projects */}
         <Projects />
-
-        {/* footer */}
-        <Footer />
       </main>
     </>
   );

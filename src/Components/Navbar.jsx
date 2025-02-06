@@ -66,7 +66,7 @@ export const Navbar = () => {
     </>
   );
   return (
-    <nav className="fixed z-10 py-5 border-b w-full  border-b-gray-600 text-white">
+    <nav className="fixed top-0 z-10 py-5 border-b w-full  border-b-gray-600 text-white backdrop-blur-md">
       <div className="flex justify-between items-center max-w-7xl mx-auto px-6 md:px-10 lg:px-0">
         <a href="/">
           <h2 className="font-semibold bg-gradient-to-r from-blue-500 to-red-500 bg-clip-text text-transparent opacity-60 text-2xl md:text-3xl">
