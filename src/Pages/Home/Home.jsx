@@ -1,3 +1,9 @@
+import { Hero } from "../Hero/Hero";
+
 export const Home = () => {
-  return <div>Home</div>;
+  return (
+    <div>
+      <Hero></Hero>
+    </div>
+  );
 };

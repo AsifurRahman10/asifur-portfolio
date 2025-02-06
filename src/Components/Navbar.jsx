@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from "react";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoIosMenu } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
-import { Link, NavLink } from "react-router-dom";
 
 export const Navbar = () => {
   const [openSidebar, setOpenSidebar] = useState(false);
@@ -32,47 +31,48 @@ export const Navbar = () => {
 
   const navList = (
     <>
-      <NavLink>
+      <a href="/">
         <li>Home</li>
-      </NavLink>
-      <NavLink>
+      </a>
+      <a href="/tech">
         <li>Tech</li>
-      </NavLink>
-      <NavLink>
+      </a>
+      <a href="/projects">
         <li>Projects</li>
-      </NavLink>
-      <NavLink>
-        <li>Contract</li>
-      </NavLink>
+      </a>
+      <a href="/contact">
+        <li>Contact</li>
+      </a>
     </>
   );
+
   const socialIcons = (
     <>
-      <Link>
-        <li className="hover:text-gray-500">
-          <FaGithub></FaGithub>
+      <a href="facebook.com" className="hover:text-gray-500">
+        <li>
+          <FaGithub />
         </li>
-      </Link>
-      <Link>
-        <li className="hover:text-blue-500">
-          <FaLinkedin></FaLinkedin>
+      </a>
+      <a href="linkdin.com" className="hover:text-blue-500">
+        <li>
+          <FaLinkedin />
         </li>
-      </Link>
-      <Link>
-        <li className="hover:text-blue-500">
-          <FaFacebook></FaFacebook>
+      </a>
+      <a href="facebook.com" className="hover:text-blue-500">
+        <li>
+          <FaFacebook />
         </li>
-      </Link>
+      </a>
     </>
   );
   return (
     <nav className="fixed z-10 py-5 border-b w-full  border-b-gray-600 text-white">
       <div className="flex justify-between items-center max-w-7xl mx-auto px-6 md:px-10 lg:px-0">
-        <Link>
+        <a href="/">
           <h2 className="font-semibold bg-gradient-to-r from-blue-500 to-red-500 bg-clip-text text-transparent opacity-60 text-2xl md:text-3xl">
             Asifur
           </h2>
-        </Link>
+        </a>
 
         <ul className="text-gray-300 font-light hidden md:flex justify-center items-center gap-6">
           {navList}
