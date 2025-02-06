@@ -50,7 +50,7 @@ export default function Projects() {
   ];
 
   return (
-    <div className="w-full min-h-screen">
+    <div className="w-full min-h-screen" id="projects">
       <h2 className="text-white text-center text-4xl lg:text-6xl">Projects</h2>
 
       <div className="space-y-14 mt-10 mx-auto w-5/6 lg:w-2/3">

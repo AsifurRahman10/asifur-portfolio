@@ -1,13 +1,22 @@
 import { useEffect, useRef, useState } from "react";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaX, FaXTwitter } from "react-icons/fa6";
 import { IoIosMenu } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
+import { Link, NavLink } from "react-router-dom";
 
 export const Navbar = () => {
   const [openSidebar, setOpenSidebar] = useState(false);
   const sidebarRef = useRef();
   const handleMenuChange = () => {
     setOpenSidebar(!openSidebar);
+  };
+
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   const closeSidebar = () => {
@@ -31,36 +40,77 @@ export const Navbar = () => {
 
   const navList = (
     <>
-      <a href="/">
+      <NavLink
+        onClick={() => scrollToSection("banner")}
+        to="/"
+        className={({ isActive }) => (isActive ? "text-[#A892FF]" : "")}
+      >
         <li>Home</li>
-      </a>
-      <a href="/tech">
+      </NavLink>
+      <NavLink
+        onClick={() => scrollToSection("technology")}
+        to="/"
+        className={({ isActive }) => (isActive ? "text-[#A892FF]" : "")}
+      >
         <li>Tech</li>
-      </a>
-      <a href="/projects">
+      </NavLink>
+      <NavLink
+        onClick={() => scrollToSection("projects")}
+        to="/"
+        className={({ isActive }) => (isActive ? "text-[#A892FF]" : "")}
+      >
         <li>Projects</li>
-      </a>
-      <a href="/contact">
+      </NavLink>
+      {/* <NavLink
+        onClick={() => scrollToSection("home")}
+        to="/contact"
+        className={({ isActive }) => (isActive ? "text-[#A892FF]" : "")}
+      >
         <li>Contact</li>
-      </a>
+      </NavLink> */}
     </>
   );
 
   const socialIcons = (
     <>
-      <a href="facebook.com" className="hover:text-gray-500">
+      <a
+        href="https://github.com/AsifurRahman10"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-gray-500"
+      >
         <li>
           <FaGithub />
         </li>
       </a>
-      <a href="linkdin.com" className="hover:text-blue-500">
+      <a
+        href="https://www.linkedin.com/in/asifur-rahman-shomik"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-blue-500"
+      >
         <li>
           <FaLinkedin />
         </li>
       </a>
-      <a href="facebook.com" className="hover:text-blue-500">
+      <a
+        href="https://www.facebook.com/asif.shomik/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-blue-500"
+      >
         <li>
           <FaFacebook />
+        </li>
+      </a>
+      <a
+        href="https://x.com/Shomikasifgmai1"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-blue-500"
+      >
+        <li>
+          <FaXTwitter />
         </li>
       </a>
     </>

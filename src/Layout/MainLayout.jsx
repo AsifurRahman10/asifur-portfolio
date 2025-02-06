@@ -1,8 +1,8 @@
 import { Navbar } from "../Components/Navbar";
-import { Footer } from "../Components/Footer";
 import { Hero } from "../Pages/Hero/Hero";
 import { Technology } from "../Pages/Technology/Technology";
 import Projects from "../Pages/Projects/Projects";
+import { AboutMe } from "../Pages/AboutMe/AboutMe";
 
 export const MainLayout = () => {
   return (
@@ -16,6 +16,9 @@ export const MainLayout = () => {
         <Navbar />
         {/* hero */}
         <Hero />
+
+        {/* about me */}
+        <AboutMe />
 
         {/* technology */}
         <Technology />

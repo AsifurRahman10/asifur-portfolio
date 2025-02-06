@@ -4,7 +4,10 @@ import { motion } from "motion/react";
 
 export const Hero = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center pt-28 mb-20 md:mb-0 md:py-0 w-5/6 md:w-full">
+    <div
+      id="banner"
+      className="min-h-screen flex flex-col justify-center items-center pt-28 mb-20 md:mb-0 md:py-0 w-5/6 md:w-full"
+    >
       <motion.div
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 100 }}

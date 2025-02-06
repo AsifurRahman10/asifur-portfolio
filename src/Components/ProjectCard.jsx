@@ -9,7 +9,7 @@ export const ProjectCard = ({ project }) => {
         {/* image */}
         <div className="">
           <img
-            className="cursor-pointer md:w-[300px] rounded-2xl transition-all duration-300 hover:scale-105"
+            className="cursor-pointer md:w-[300px] rounded-2xl transition-all duration-300 hover:scale-105 h-full lg:h-[170px]"
             src={image}
             alt={title}
           />

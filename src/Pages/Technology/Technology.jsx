@@ -12,7 +12,10 @@ export const Technology = () => {
     visible: { opacity: 1, y: 0 },
   };
   return (
-    <div className="text-whit flex w-full flex-col items-center justify-center pb-20 min-h-[60vh]">
+    <div
+      id="technology"
+      className="text-whit flex w-full flex-col items-center justify-center pb-20 min-h-[60vh]"
+    >
       <motion.h1
         variants={animation}
         initial="hidden"
