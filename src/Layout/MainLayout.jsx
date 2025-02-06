@@ -4,6 +4,7 @@ import { Technology } from "../Pages/Technology/Technology";
 import Projects from "../Pages/Projects/Projects";
 import { AboutMe } from "../Pages/AboutMe/AboutMe";
 import Education from "../Pages/Education/Education";
+import ContactUs from "../Pages/ContactUs/ContactUs";
 
 export const MainLayout = () => {
   return (
@@ -29,6 +30,10 @@ export const MainLayout = () => {
 
         {/* Education */}
         <Education />
+
+        {/* Contact us */}
+
+        <ContactUs />
       </main>
     </>
   );
