@@ -3,6 +3,7 @@ import { Hero } from "../Pages/Hero/Hero";
 import { Technology } from "../Pages/Technology/Technology";
 import Projects from "../Pages/Projects/Projects";
 import { AboutMe } from "../Pages/AboutMe/AboutMe";
+import Education from "../Pages/Education/Education";
 
 export const MainLayout = () => {
   return (
@@ -25,6 +26,9 @@ export const MainLayout = () => {
 
         {/* projects */}
         <Projects />
+
+        {/* Education */}
+        <Education />
       </main>
     </>
   );
