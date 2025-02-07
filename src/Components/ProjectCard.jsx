@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import { DisplayOnScroll } from "./DisplayOnScroll";
 
-export const ProjectCard = ({ project }) => {
+export const ProjectCard = ({ project, id }) => {
   const { title, description, technologies, image } = project;
 
   return (
@@ -9,7 +10,7 @@ export const ProjectCard = ({ project }) => {
         {/* image */}
         <div className="">
           <img
-            className="cursor-pointer md:w-[300px] rounded-2xl transition-all duration-300 hover:scale-105 h-full lg:h-[170px]"
+            className="cursor-pointer lg:w-[350px] rounded-2xl transition-all duration-300 hover:scale-105 h-full lg:h-[200px]"
             src={image}
             alt={title}
           />
@@ -29,6 +30,11 @@ export const ProjectCard = ({ project }) => {
               </span>
             ))}
           </div>
+          <Link to={`/projectDetails/${id}`}>
+            <button className="bg-gray-400 py-2 px-6 rounded-full mt-2 hover:bg-[#A892FF] hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105">
+              View Details
+            </button>
+          </Link>
         </div>
       </div>
     </DisplayOnScroll>

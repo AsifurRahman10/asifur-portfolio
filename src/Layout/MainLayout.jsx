@@ -13,7 +13,7 @@ export const MainLayout = () => {
         {/* The fixed background */}
       </div>
 
-      <main className="relative flex flex-col items-center min-h-screen">
+      <main className="relative flex flex-col items-center gap-10">
         {/* Ensure the content is on top of the background */}
         <Navbar />
         {/* hero */}

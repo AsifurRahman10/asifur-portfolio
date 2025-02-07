@@ -50,12 +50,15 @@ export default function Projects() {
   ];
 
   return (
-    <div className="w-full min-h-screen" id="projects">
-      <h2 className="text-white text-center text-4xl lg:text-6xl">Projects</h2>
+    <div
+      className="w-full min-h-screen flex flex-col justify-center items-center"
+      id="projects"
+    >
+      <h2 className="text-4xl md:text-5xl lg:text-6xl text-white">Projects</h2>
 
       <div className="space-y-14 mt-10 mx-auto w-5/6 lg:w-2/3">
         {projectsData.map((project, idx) => (
-          <ProjectCard key={idx} project={project} />
+          <ProjectCard key={idx} project={project} id={idx + 1} />
         ))}
       </div>
     </div>

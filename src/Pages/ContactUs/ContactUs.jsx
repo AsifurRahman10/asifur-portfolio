@@ -47,11 +47,12 @@ export default function ContactUs() {
   const isInView = useInView(ref);
   return (
     <motion.div
+      id="contact-me"
       ref={ref}
       variants={variants}
       initial="initial"
       whileInView="animate"
-      className="text-white flex flex-col min-h-screen md:flex-row justify-center items-center w-5/6 lg:w-2/3 pb-10"
+      className="text-white min-h-screen flex flex-col lg:flex-row justify-center items-center w-5/6 lg:w-2/3 pb-10"
     >
       {/* text part */}
 

@@ -2,7 +2,10 @@ import { motion } from "motion/react";
 import ownImg from "../../../public/own.png";
 export const AboutMe = () => {
   return (
-    <div className="text-white flex gap-10 justify-center items-center flex-col md:flex-row w-5/6 mx-auto mb-10 md:mb-0">
+    <div
+      id="about-me"
+      className="text-white flex gap-10 justify-center items-center flex-col lg:flex-row w-5/6 mx-auto min-h-screen"
+    >
       {/* text */}
       <motion.div
         initial={{ opacity: 0, x: -50 }}
@@ -10,8 +13,10 @@ export const AboutMe = () => {
         transition={{ duration: 0.9, delay: 0.2 }}
         className="flex-1"
       >
-        <h2 className="text-6xl text-white">About me</h2>
-        <p className="mt-4 text-gray-200 text-lg">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl text-white mt-20 lg:mt-0">
+          About me
+        </h2>
+        <p className="mt-4 text-gray-200 text-base md:text-lg">
           <span className="italic">
             Hi, I’m <span className="font-bold text-white">Asifur Rahman</span>,
             a Front-End Developer passionate about creating intuitive websites.
@@ -25,14 +30,20 @@ export const AboutMe = () => {
         </p>
       </motion.div>
 
-      {/* image */}
+      {/* Image */}
       <motion.div
         initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9, delay: 0.2 }}
-        className="flex-1"
+        className="flex-1 flex justify-center"
       >
-        <img src={ownImg} alt="asif's-photo" />
+        <img
+          src={ownImg}
+          alt="Asif's Photo"
+          className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 
+               object-cover rounded-lg shadow-lg transition-transform duration-300 
+               hover:scale-105"
+        />
       </motion.div>
 
       {/* other */}

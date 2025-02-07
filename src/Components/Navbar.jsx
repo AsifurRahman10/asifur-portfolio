@@ -40,34 +40,39 @@ export const Navbar = () => {
 
   const navList = (
     <>
-      <NavLink
-        onClick={() => scrollToSection("banner")}
-        to="/"
-        className={({ isActive }) => (isActive ? "text-[#A892FF]" : "")}
-      >
-        <li>Home</li>
-      </NavLink>
-      <NavLink
-        onClick={() => scrollToSection("technology")}
-        to="/"
-        className={({ isActive }) => (isActive ? "text-[#A892FF]" : "")}
-      >
-        <li>Tech</li>
-      </NavLink>
-      <NavLink
-        onClick={() => scrollToSection("projects")}
-        to="/"
-        className={({ isActive }) => (isActive ? "text-[#A892FF]" : "")}
-      >
-        <li>Projects</li>
-      </NavLink>
-      {/* <NavLink
-        onClick={() => scrollToSection("home")}
-        to="/contact"
-        className={({ isActive }) => (isActive ? "text-[#A892FF]" : "")}
-      >
-        <li>Contact</li>
-      </NavLink> */}
+      <li>
+        <a href="#banner" className="text-white hover:text-[#A892FF]">
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="#about-me" className="text-white hover:text-[#A892FF]">
+          About me
+        </a>
+      </li>
+      <li>
+        <a href="#technology" className="text-white hover:text-[#A892FF]">
+          My skills
+        </a>
+      </li>
+      <li>
+        <a href="#projects" className="text-white hover:text-[#A892FF]">
+          Projects
+        </a>
+      </li>
+      <li>
+        <a
+          href="#education-experience"
+          className="text-white hover:text-[#A892FF]"
+        >
+          Education & experience
+        </a>
+      </li>
+      <li>
+        <a href="#contact-me" className="text-white hover:text-[#A892FF]">
+          Contact me
+        </a>
+      </li>
     </>
   );
 
@@ -116,8 +121,11 @@ export const Navbar = () => {
     </>
   );
   return (
-    <nav className="fixed top-0 z-10 py-5 border-b w-full  border-b-gray-600 text-white backdrop-blur-md">
-      <div className="flex justify-between items-center max-w-7xl mx-auto px-6 md:px-10 lg:px-0">
+    <nav
+      className="fixed top-0 z-10 py-5 border-b w-full  border-b-gray-600 text-white backdrop-blur-md  px-6 md:px-10 lg:px-0
+    "
+    >
+      <div className="flex justify-between items-center max-w-7xl mx-auto">
         <a href="/">
           <h2 className="font-semibold bg-gradient-to-r from-blue-500 to-red-500 bg-clip-text text-transparent opacity-60 text-2xl md:text-3xl">
             Asifur
