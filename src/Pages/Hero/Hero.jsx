@@ -1,4 +1,4 @@
-import hero from "../../../public/hero.jpg";
+import hero from "../../../public/hero.png";
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from "motion/react";
 
