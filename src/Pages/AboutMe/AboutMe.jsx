@@ -19,14 +19,15 @@ export const AboutMe = () => {
         <p className="mt-4 text-gray-200 text-base md:text-lg">
           <span className="italic">
             Hi, I’m <span className="font-bold text-white">Asifur Rahman</span>,
-            a Front-End Developer passionate about creating intuitive websites.
+            a web developer focused on the MERN stack, passionate about creating
+            intuitive websites.
           </span>{" "}
-          My journey in coding began in 2021 after graduation, working across
-          various sectors before immersing myself in web development in 2024,
-          where I dove deep into web development, honing my skills and mastering
-          modern web technologies like React, Tailwind, Node.js, and Express.
-          I’m driven by problem-solving and enhancing user experiences through
-          code.
+          My coding journey began in 2021 during my undergraduate studies. After
+          graduation, I worked across various sectors before fully immersing
+          myself in web development in 2024, where I dove deep into honing my
+          skills and mastering modern web technologies like React, Tailwind,
+          Node.js, and Express. I’m driven by problem-solving and enhancing user
+          experiences through code.
         </p>
       </motion.div>
 

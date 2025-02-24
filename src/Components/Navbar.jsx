@@ -41,37 +41,58 @@ export const Navbar = () => {
   const navList = (
     <>
       <li>
-        <a href="#banner" className="text-white hover:text-[#A892FF]">
+        <Link
+          to="/"
+          onClick={() => scrollToSection("banner")}
+          className="text-white hover:text-[#A892FF]"
+        >
           Home
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="#about-me" className="text-white hover:text-[#A892FF]">
+        <Link
+          to="/"
+          onClick={() => scrollToSection("about-me")}
+          className="text-white hover:text-[#A892FF]"
+        >
           About me
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="#technology" className="text-white hover:text-[#A892FF]">
+        <Link
+          to="/"
+          onClick={() => scrollToSection("technology")}
+          className="text-white hover:text-[#A892FF]"
+        >
           My skills
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="#projects" className="text-white hover:text-[#A892FF]">
+        <Link
+          to="/"
+          onClick={() => scrollToSection("projects")}
+          className="text-white hover:text-[#A892FF]"
+        >
           Projects
-        </a>
+        </Link>
       </li>
       <li>
-        <a
-          href="#education-experience"
+        <Link
+          to="/"
+          onClick={() => scrollToSection("education-experience")}
           className="text-white hover:text-[#A892FF]"
         >
           Education & experience
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="#contact-me" className="text-white hover:text-[#A892FF]">
+        <Link
+          to="/"
+          onClick={() => scrollToSection("contact-me")}
+          className="text-white hover:text-[#A892FF]"
+        >
           Contact me
-        </a>
+        </Link>
       </li>
     </>
   );
@@ -132,22 +153,22 @@ export const Navbar = () => {
           </h2>
         </a>
 
-        <ul className="text-gray-300 font-light hidden md:flex justify-center items-center gap-6">
+        <ul className="text-gray-300 font-light hidden lg:flex justify-center items-center gap-6">
           {navList}
         </ul>
 
-        <ul className="text-white text-2xl hidden md:flex justify-center items-center gap-4 ">
+        <ul className="text-white text-2xl hidden lg:flex justify-center items-center gap-4 ">
           {socialIcons}
         </ul>
         {openSidebar ? (
           <RxCross2
             onClick={handleMenuChange}
-            className="block md:hidden text-gray-400 text-4xl"
+            className="block lg:hidden text-gray-400 text-4xl"
           />
         ) : (
           <IoIosMenu
             onClick={handleMenuChange}
-            className="block md:hidden text-gray-400 text-4xl"
+            className="block lg:hidden text-gray-400 text-4xl"
           />
         )}
         <div

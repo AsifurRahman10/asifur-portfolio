@@ -4,8 +4,9 @@ import projectsData from "../../../public/projectDetails.json";
 
 export const ProjectDetails = () => {
   const { id } = useParams();
+  console.log(id);
   const projectDetails = projectsData.find(
-    (project) => project.id === parseInt(id)
+    (project) => project.id == parseInt(id)
   );
   const {
     projectName,
@@ -78,16 +79,18 @@ export const ProjectDetails = () => {
                 ))}
               </span>
             </p>
-            <p className="mt-6">
-              <span className="font-medium">Tools and Library</span> <br />
-              <span className="flex flex-wrap gap-3 text-black mt-2">
-                {toolsAndLibraries.map((item) => (
-                  <span className="bg-[#A892FF] px-3 py-1 rounded-2xl text-sm">
-                    {item}
-                  </span>
-                ))}
-              </span>
-            </p>
+            {toolsAndLibraries?.length > 0 && (
+              <p className="mt-6">
+                <span className="font-medium">Tools and Library</span> <br />
+                <span className="flex flex-wrap gap-3 text-black mt-2">
+                  {toolsAndLibraries?.map((item) => (
+                    <span className="bg-[#A892FF] px-3 py-1 rounded-2xl text-sm">
+                      {item}
+                    </span>
+                  ))}
+                </span>
+              </p>
+            )}
 
             <div className="mt-8">
               <hr className="my-6" />

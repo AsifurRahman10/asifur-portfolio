@@ -49,7 +49,9 @@
     "projectName": "ArtifactArcade",
     "image": "https://i.ibb.co.com/8ngKRKRz/ac.png",
     "description": "ArtifactArcade is a web application dedicated to tracking historical artifacts like the Rosetta Stone and Antikythera Mechanism. It allows users to explore, view details, and contribute their own artifact entries, fostering a community-driven repository of historical knowledge. Users can interact by liking or disliking artifacts, and authentication ensures secure access to various features.",
-    "liveProjectLink": "https://artifactarcade.netlify.app/",
+    "liveProjectLink": {
+      "client": "https://artifactarcade-website.web.app/"
+    },
     "githubRepositoryLink": "https://github.com/AsifurRahman10/ArtifactArcade-website-client",
     "technologyStack": {
       "frontend": [
@@ -95,7 +97,7 @@
       "client": "https://visaease-web.netlify.app/",
       "server": "https://visaease-server.vercel.app/"
     },
-    "githubRepositoryLink": "https://github.com/YourGitHubUsername/VisaEase-Client",
+    "githubRepositoryLink": "https://github.com/AsifurRahman10/VisaEase-Visa-Navigator-Portal-client",
     "technologyStack": {
       "frontend": [
         "React",
@@ -143,7 +145,8 @@
         "React Icons",
         "React Spinners"
       ],
-      "backend": ["Firebase Authentication"]
+      "backend": ["Firebase Authentication"],
+      "toolsAndLibraries": []
     },
     "challengesFaced": [
       "Implementing private routes to restrict access to lessons and tutorials.",

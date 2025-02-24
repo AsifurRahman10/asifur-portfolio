@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 import { DisplayOnScroll } from "./DisplayOnScroll";
 
-export const ProjectCard = ({ project, id }) => {
-  const { title, description, technologies, image } = project;
+export const ProjectCard = ({ project }) => {
+  const { id, title, description, technologies, image } = project;
 
   return (
     <DisplayOnScroll>
       <div className="flex flex-col lg:flex-row gap-10 lg:gap-20 items-center">
         {/* image */}
-        <div className="">
+        <div>
           <img
             className="cursor-pointer lg:w-[350px] rounded-2xl transition-all duration-300 hover:scale-105 h-full lg:h-[200px]"
             src={image}

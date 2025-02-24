@@ -48,7 +48,7 @@ export const Hero = () => {
             experiences. Let’s build something extraordinary together!
           </p>
 
-          <a href="/CV_of_Asifur_Rahman.pdf" download>
+          <a href="/Asifur_Rahman_Resume.pdf" download>
             <button className="bg-[#A892FF] px-8 py-3 mt-8 rounded-3xl hover:bg-[#BBA0FF] transition-all duration-300">
               Download Resume
             </button>

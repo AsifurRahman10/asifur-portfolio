@@ -5,10 +5,13 @@ import Projects from "../Pages/Projects/Projects";
 import { AboutMe } from "../Pages/AboutMe/AboutMe";
 import Education from "../Pages/Education/Education";
 import ContactUs from "../Pages/ContactUs/ContactUs";
+import { Cursor } from "../Components/Cursor";
+import { Parallax } from "../Pages/Parallax/Parallax";
 
 export const MainLayout = () => {
   return (
     <>
+      <Cursor />
       <div className="fixed -z-10 min-h-screen w-full [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
         {/* The fixed background */}
       </div>
@@ -21,6 +24,9 @@ export const MainLayout = () => {
 
         {/* about me */}
         <AboutMe />
+
+        {/* parallax */}
+        {/* <Parallax /> */}
 
         {/* technology */}
         <Technology />

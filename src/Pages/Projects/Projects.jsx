@@ -7,6 +7,7 @@ import project4 from "../../assets/projects/p4.png";
 export default function Projects() {
   const projectsData = [
     {
+      id: 1,
       title: "NextGen Hunt",
       image: project1,
       description:
@@ -21,6 +22,7 @@ export default function Projects() {
       ],
     },
     {
+      id: 2,
       title: "ArtifactArcade",
       image: project2,
       description:
@@ -28,6 +30,7 @@ export default function Projects() {
       technologies: ["React", "Firebase", "Express.js"],
     },
     {
+      id: 3,
       title: "VisaEase",
       image: project3,
       description:
@@ -41,6 +44,7 @@ export default function Projects() {
       ],
     },
     {
+      id: 4,
       title: "Lingo-Bingo",
       image: project4,
       description:
@@ -58,7 +62,7 @@ export default function Projects() {
 
       <div className="space-y-14 mt-10 mx-auto w-5/6 lg:w-2/3">
         {projectsData.map((project, idx) => (
-          <ProjectCard key={idx} project={project} id={idx + 1} />
+          <ProjectCard key={idx} project={project} />
         ))}
       </div>
     </div>
