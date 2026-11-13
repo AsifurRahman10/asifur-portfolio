@@ -1,6 +1,62 @@
 [
   {
     "id": 1,
+    "projectName": "Life Hospital",
+    "image": "https://res.cloudinary.com/dsa8ooidh/video/upload/v1794488912/HMS_Video_with_music_w1mppj.mp4",
+    "mediaType": "video",
+    "description": "Life Hospital is a comprehensive healthcare management platform designed to digitize hospital operations and improve coordination between patients, doctors, and administrators. It provides doctor scheduling, appointment booking, patient management, digital prescriptions, online payments, and automated invoicing through a centralized healthcare system.",
+    "liveProjectLink": {
+      "client": "YOUR_LIVE_FRONTEND_URL"
+    },
+    "githubRepositoryLink": {
+      "client": "https://github.com/AsifurRahman10/hospital-management-system-client",
+      "server": "https://github.com/AsifurRahman10/hospital-management-system-back-end"
+    },
+    "technologyStack": {
+      "frontend": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Redux Toolkit",
+        "TanStack React Query",
+        "Axios",
+        "Zod"
+      ],
+      "backend": [
+        "Node.js",
+        "Express.js",
+        "TypeScript",
+        "PostgreSQL",
+        "Prisma ORM"
+      ],
+      "toolsAndLibraries": [
+        "Better Auth",
+        "Stripe",
+        "Cloudinary",
+        "Nodemailer",
+        "Docker",
+        "PDFKit"
+      ]
+    },
+    "challengesFaced": [
+      "Implementing role-based access control to secure resources and permissions across different user roles.",
+      "Designing appointment scheduling workflows to manage doctor availability and prevent conflicting bookings.",
+      "Handling Stripe webhook events reliably to synchronize payment statuses and automate unpaid appointment cancellations.",
+      "Generating digital prescriptions and invoices as PDFs while integrating email delivery workflows."
+    ],
+    "potentialImprovementsAndFuturePlans": [
+      "Integrating real-time notifications for appointment updates and doctor availability.",
+      "Adding telemedicine functionality for online doctor consultations.",
+      "Implementing Electronic Health Records (EHR) to maintain comprehensive patient medical histories.",
+      "Developing laboratory management for diagnostic test requests and reports.",
+      "Adding pharmacy management with medicine inventory and prescription tracking.",
+      "Supporting multi-branch hospitals with centralized administration."
+    ]
+  },
+
+  {
+    "id": 2,
     "projectName": "NextGen Hunt",
     "image": "https://i.ibb.co.com/Qv5L73VC/nextgtch.png",
     "description": "NextGen Hunt is a platform where users can discover and share the latest technology, including web apps, AI tools, software, games, and mobile apps. It features role-based access (User, Moderator, Admin) and offers functionalities such as voting, reporting, product reviews, dashboard management, and coupon system integration. The site is fully responsive and provides a seamless user experience.",
@@ -45,7 +101,7 @@
     ]
   },
   {
-    "id": 2,
+    "id": 3,
     "projectName": "ArtifactArcade",
     "image": "https://i.ibb.co.com/8ngKRKRz/ac.png",
     "description": "ArtifactArcade is a web application dedicated to tracking historical artifacts like the Rosetta Stone and Antikythera Mechanism. It allows users to explore, view details, and contribute their own artifact entries, fostering a community-driven repository of historical knowledge. Users can interact by liking or disliking artifacts, and authentication ensures secure access to various features.",
@@ -89,7 +145,7 @@
     ]
   },
   {
-    "id": 3,
+    "id": 4,
     "projectName": "VisaEase",
     "image": "https://i.ibb.co.com/5XgwPXnT/li.png",
     "description": "VisaEase is a user-friendly Visa Navigator Portal designed to simplify visa management for travelers. Users can check visa requirements, view detailed visa information, apply for visas online, and track their applications effortlessly. The platform offers dynamic visa management for both users and administrators, ensuring an efficient and feature-rich experience. The website is fully responsive, optimized for desktops, tablets, and smartphones.",
@@ -128,7 +184,7 @@
     ]
   },
   {
-    "id": 4,
+    "id": 5,
     "projectName": "Lingo-Bingo",
     "image": "https://i.ibb.co.com/kgNTRcLL/li.png",
     "description": "Lingo-Bingo is an interactive e-learning platform designed to make learning the German language fun and accessible. With a rich vocabulary bank, expert support, and engaging lessons, users can master German at their own pace. The platform features structured lessons, pronunciation guides, and tutorial videos to enhance the learning experience.",
